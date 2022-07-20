@@ -1,0 +1,39 @@
+main{
+    /* width: 100%; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardList {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttons{
+    width: 150px;
+    z-index: 1;
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buttons svg {
+    cursor: pointer;
+    transition: ease .3s;
+}
+
+.buttons .previous:hover {
+    transform: translateX(-10px);
+}
+
+.buttons .next:hover {
+    transform: translateX(10px);
+}

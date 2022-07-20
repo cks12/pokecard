@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import HomePage from './pages/homepage';
 import reportWebVitals from './reportWebVitals';
+import './global/styles.css'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <HomePage></HomePage>
   </React.StrictMode>
 );
 
