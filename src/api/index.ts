@@ -29,7 +29,7 @@ class pokemon {
         }
     }
 
-    async listPokemon(page: number = 1): Promise<pokemonListInterface>{
+    async listPokemon(page: number = 0): Promise<pokemonListInterface>{
         console.log("loading...")
         const pokemon = await this.api.get(`/pokemon?offset=${page*20}&limit=20`)
         console.log(pokemon)
