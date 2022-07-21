@@ -12,15 +12,17 @@ const Deck: React.FC = () => {
 
     return useMemo( () => <>
     {
-        pokemonListInformation.map((item,index) => <TinderCard 
+        pokemonListInformation.map((item,index) => <><TinderCard 
         key={item.pokemonInformation.name} 
         preventSwipe={["top","bottom","left","rigth"]} 
         className='swipe'
         onSwipe={nextPokemon}
         >
         <PokeCard visible={true} pokemonInfosProps={item}/>
-        </TinderCard>)
+        </TinderCard>
+        </>)
     }
+    <PokeCard visible={true} ></PokeCard>
     </>, [pokemonListInformation])
 }
 

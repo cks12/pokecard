@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { pokemonInfosProps } from '../../api/pokemonInterface';
 import Icons from '../../utils/importIcons';
 import './styles.css'
+import loading from '../../assets/images/loading.gif'
 
 interface pokemonInformation {
     pokemonInfosProps?:pokemonInfosProps,
@@ -23,7 +24,7 @@ const PokeCard: React.FC<pokemonInformation> = (props) => {
                 </div>
             </header>
             <main>
-                <img src={pokemonInformation.sprites.other['official-artwork'].front_default || ""} alt="" className="mainImage" />    
+                <img src={pokemonInformation.sprites.other['official-artwork'].front_default || loading} alt="" className="mainImage" />    
             </main>
             <footer>
                 <div className="types">

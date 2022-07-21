@@ -12,6 +12,10 @@ const HomePage: React.FC = () => {
     const pokemonContextValue = usePokemonContext();
     return <PokemonContext.Provider value={pokemonContextValue}>
     <main>
+        <div className="credits">
+        <p>@Feito em São Paulo</p>
+        <a target='_blank' href='https://github.com/cks12'>GitHub</a>
+        </div>
         <div className="cardList">
             <Deck/>
         </div>
