@@ -16,13 +16,14 @@ html,body,#root {
     height: 100vh;
     background-color: var(--red-main-color);
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-body::before{
+#root::after{
     content: '';
     background-color: var(--black-main-color);
     height: 10vh;
-    bottom: 50%;
+    bottom: 50vh;
     width: 100vw;
     position: fixed;
 

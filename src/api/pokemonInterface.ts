@@ -110,3 +110,30 @@ export interface pokemonSpecie {
     "evolves_from_species": null,
     "flavor_text_entries": flavor_text_entries[] 
 }
+
+export const defaultPokemonList = {
+    count:0,
+    next:"",
+    previous:"",
+    results:[]
+}
+
+export interface indexInformation {
+    currentIndex: number,
+    load: number,
+    page: number,
+}
+
+export interface pokemonProvidersInterface {
+    pokeList: pokemonListInterface
+    pokemonListInformation: pokemonInfosProps[],
+    index: indexInformation,
+    getPokemonList: () => void,
+    getPokemonListInformation: () => void,
+    nextPokemon: () => void
+}
+
+export interface pokemonInfosProps {
+    pokemonInformation:pokemonInterface,
+    pokemonSpecies:pokemonSpecie 
+}

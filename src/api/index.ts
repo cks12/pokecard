@@ -1,11 +1,5 @@
 import axios, { AxiosInstance } from "axios";
-import { pokemonInterface, pokemonListInterface, pokemonSpecie } from "./pokemonInterface";
-
-export interface pokemonInfosProps {
-    pokemonInformation:pokemonInterface,
-    pokemonSpecies:pokemonSpecie 
-}
-
+import { pokemonInfosProps, pokemonInterface, pokemonListInterface, pokemonSpecie } from "./pokemonInterface";
 
 class pokemon {
     baseUrl: string;
@@ -29,10 +23,8 @@ class pokemon {
         }
     }
 
-    async listPokemon(page: number = 0): Promise<pokemonListInterface>{
-        console.log("loading...")
-        const pokemon = await this.api.get(`/pokemon?offset=${page*20}&limit=20`)
-        console.log(pokemon)
+    async listPokemon(page: number = 0, limit: number = 3): Promise<pokemonListInterface>{
+        const pokemon = await this.api.get(`/pokemon?offset=${page*limit}&limit=${limit}`)
         return pokemon.data
     }
 }

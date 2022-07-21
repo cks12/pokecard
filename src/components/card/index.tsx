@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
+import { pokemonInfosProps } from '../../api/pokemonInterface';
 import Icons from '../../utils/importIcons';
 import './styles.css'
-import { pokemonInfosProps } from '../../api';
 
 interface pokemonInformation {
     pokemonInfosProps?:pokemonInfosProps,
@@ -9,9 +9,6 @@ interface pokemonInformation {
 }
 
 const PokeCard: React.FC<pokemonInformation> = (props) => {
-    useEffect(() => {
-        console.log(props.visible)
-    },[])
     if (!props.pokemonInfosProps || !props.visible)
         return null
     const {pokemonInformation, pokemonSpecies} = props.pokemonInfosProps;
@@ -50,7 +47,7 @@ const PokeCard: React.FC<pokemonInformation> = (props) => {
                     <div className="group">
                     
                     {
-                        pokemonInformation.abilities.map(ability => <p>{ability.ability.name}</p>)
+                        pokemonInformation.abilities.map((ability,index) => <p key={`${ability.ability.name} - ${index}`}>{ability.ability.name}</p>)
                     }
                    </div> 
                 </div>

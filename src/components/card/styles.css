@@ -1,14 +1,59 @@
 :root{
     --background-card-color:#D9D9D9;
+    --border-color: #000;
+    color: white;
+}
+
+.black {
+    --footer-color-background: #c4c9c989;
+    --background-card-color: #2C3333;
+    --border-color: #E7F6F2;
+}
+
+.blue {
+    --background-card-color:#CA955C;
+    --footer-color-background:#876445d0;
+}
+
+.brown {
+    --background-card-color:#3AB4F2;
+    --footer-color-background:#0078AAd0;
+}
+
+.gray {
+    --background-card-color:#D9D9D9;
+    --footer-color-background:#DDDDDD;
+}
+
+.pink {
+    --background-card-color:#F900BF;
+    --footer-color-background:#FF85B3d0;
+}
+
+.purple {
+    --background-card-color:#A760FF;
+    --footer-color-background:#CA82FFd0;
+}
+
+.white {
+    --background-card-color:#FEFBF6;
+    --footer-color-background:#3D3C42d0;
+    color:#3D3C42
+}
+
+.yellow {
+    --background-card-color:#FFEA11;
+    --footer-color-background:#FFF80Ad0;
 }
 
 .red {
     --background-card-color:#ECA061;
+    --footer-color-background:#a7520dd0;
+    color: white;
 }
 
 .green {
     --background-card-color:#3CCF4E;
-    --icon-color: #D4F6CC;
     --footer-color-background:#4b8400d0;
     color:white;
 }
@@ -64,7 +109,7 @@ svg {
     width: 93%;
     height: 95%;
     top: 10px;
-    border: 4px solid #000000;
+    border: 4px solid var(--border-color);
     border-radius: 10px;
 
 }

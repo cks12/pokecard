@@ -37,3 +37,12 @@ main{
 .buttons .next:hover {
     transform: translateX(10px);
 }
+
+.swipe{
+    z-index: 100;
+    position: absolute;
+}
+
+.list {
+    position: absolute;
+}
