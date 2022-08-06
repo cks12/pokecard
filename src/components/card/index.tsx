@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { pokemonInfosProps } from '../../api/pokemonInterface';
 import Icons from '../../utils/importIcons';
 import './styles.css'
@@ -13,6 +13,9 @@ const PokeCard: React.FC<pokemonInformation> = (props) => {
     if (!props.pokemonInfosProps || !props.visible)
         return null
     const {pokemonInformation, pokemonSpecies} = props.pokemonInfosProps;
+    pokemonSpecies.flavor_text_entries = pokemonSpecies.flavor_text_entries.filter(text => {
+        return (text.language.name === 'en')
+    });
     const Icon = Icons[`${pokemonInformation.types[0].type.name || "bug"}Icon`]();
     return <>
             <div className={`card ${pokemonSpecies.color.name}`}>

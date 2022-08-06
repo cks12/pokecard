@@ -130,7 +130,8 @@ export interface pokemonProvidersInterface {
     index: indexInformation,
     getPokemonList: () => void,
     getPokemonListInformation: () => void,
-    nextPokemon: () => void
+    nextPokemon: (sw: string) => void,
+    loading:boolean;
 }
 
 export interface pokemonInfosProps {
