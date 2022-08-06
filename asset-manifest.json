@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/pokecard/static/css/main.5a3739cf.css",
+    "main.js": "/pokecard/static/js/main.d3d00201.js",
+    "static/js/787.283b6f2e.chunk.js": "/pokecard/static/js/787.283b6f2e.chunk.js",
+    "static/media/loading.gif": "/pokecard/static/media/loading.967e8e10f7debbb61da0.gif",
+    "static/media/dragon.svg": "/pokecard/static/media/dragon.9d32757b191cbbaea8d4d418ff5d4ed3.svg",
+    "static/media/fire.svg": "/pokecard/static/media/fire.e0bd7fcab2121e7ac1ffbbe09a3ca5dd.svg",
+    "static/media/psychic.svg": "/pokecard/static/media/psychic.67439878eaa68ee726de9944c7ff9757.svg",
+    "static/media/fairy.svg": "/pokecard/static/media/fairy.767c2f5699eb5f1120f19c7a76b41a1a.svg",
+    "static/media/bug.svg": "/pokecard/static/media/bug.204df919b74456c6dc729be0aa67759b.svg",
+    "static/media/rock.svg": "/pokecard/static/media/rock.61a8428da62eeab93746d62969c71989.svg",
+    "static/media/ice.svg": "/pokecard/static/media/ice.cd2f90437e3fe39235a9adca860ce2d2.svg",
+    "static/media/ghost.svg": "/pokecard/static/media/ghost.ddf268314aed78d0524d47aa90e49187.svg",
+    "static/media/flying.svg": "/pokecard/static/media/flying.d17785038a59f3ce2121e423a2ded0f7.svg",
+    "static/media/fighting.svg": "/pokecard/static/media/fighting.f20d1bd24f0cde62bb378b672f0178aa.svg",
+    "static/media/poison.svg": "/pokecard/static/media/poison.43956925ad0376b77c7e3921caa3dc30.svg",
+    "static/media/steel.svg": "/pokecard/static/media/steel.cb91a92a3b5197e2cf61bc66592f42d1.svg",
+    "static/media/ground.svg": "/pokecard/static/media/ground.e567f4fc3f3422598757977865de57d8.svg",
+    "index.html": "/pokecard/index.html",
+    "static/media/dark.svg": "/pokecard/static/media/dark.27fdc7ed2bd3294b9838b1882c20e225.svg",
+    "static/media/water.svg": "/pokecard/static/media/water.b6d13329535e4be9e9b4f8da4694faba.svg",
+    "static/media/electric.svg": "/pokecard/static/media/electric.bc35c5a3faf04b605c00967b94e93693.svg",
+    "static/media/grass.svg": "/pokecard/static/media/grass.e09623e3345d5bf5286f5323dd923c60.svg",
+    "static/media/normal.svg": "/pokecard/static/media/normal.2ba66dd583ebf70eb414a0cfd20a48be.svg",
+    "main.5a3739cf.css.map": "/pokecard/static/css/main.5a3739cf.css.map",
+    "main.d3d00201.js.map": "/pokecard/static/js/main.d3d00201.js.map",
+    "787.283b6f2e.chunk.js.map": "/pokecard/static/js/787.283b6f2e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a3739cf.css",
+    "static/js/main.d3d00201.js"
+  ]
+}
